@@ -1,0 +1,29 @@
+import java.util.Random;
+
+import javax.swing.JOptionPane;
+
+
+public class HiLowGame
+{
+	public static void main(String[] args)
+	{
+		int x = new Random().nextInt(101);
+		
+		String p = JOptionPane.showInputDialog("What number is x?");
+		
+		int z = Integer.parseInt(p);
+		
+		if(z < x)
+		{
+			System.out.print("Higher");
+		}
+		else if(z > x)
+		{
+			System.out.print("Lower");
+		}
+		else if(z = x)
+		{
+			System.out.print("You win!");
+		}
+	}
+}

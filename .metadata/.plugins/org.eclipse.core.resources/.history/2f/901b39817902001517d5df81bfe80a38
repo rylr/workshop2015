@@ -1,0 +1,14 @@
+import java.util.Random;
+
+
+public class RandomInts
+{
+	public static void main(String[] args)
+	{
+		int z = 50;
+		
+		int x = new Random(z).nextInt(100);
+		
+		System.out.println(x);
+	}
+}

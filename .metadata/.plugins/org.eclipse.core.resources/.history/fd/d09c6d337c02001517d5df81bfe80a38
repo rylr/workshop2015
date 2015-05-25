@@ -1,0 +1,25 @@
+import java.util.Random;
+
+import javax.swing.JOptionPane;
+
+
+public class HiLowGame
+{
+	public static void main(String[] args)
+	{
+		int x = new Random().nextInt(101);
+		
+		int z = 64;
+		
+		JOptionPane.showInputDialog(null, "What number is x?");
+		
+		if(x < z)
+		{
+			System.out.print("Higher");
+		}
+		else if(x > z)
+		{
+			System.out.print("Lower");
+		}
+	}
+}

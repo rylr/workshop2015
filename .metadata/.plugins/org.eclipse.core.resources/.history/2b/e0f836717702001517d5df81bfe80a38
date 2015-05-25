@@ -1,0 +1,22 @@
+
+public class FIbonacci
+{
+	public static void main(String[] args)
+	{
+		int z = 1;
+		int p = 1;
+		
+		for (int i = 0; i < 10; i++)
+		{
+			i = z++;
+			
+			i = z + p;
+			
+			System.out.println(i);
+			
+			
+			
+			 
+		}
+	}
+}

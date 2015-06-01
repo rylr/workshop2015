@@ -1,0 +1,57 @@
+import javax.swing.JOptionPane;
+
+
+public class GuessTheAnimal
+{
+	public static void main(String[] args)
+	{
+		// Copyright Wintriss Technical Schools 2013
+		// 1. ask user if it has 4 legs. if yes, it’s a pig if no, it’s a monkey 
+		// 2. add zebra, pig, monkey, bird,
+		// 3. add fish and spider.
+		
+		int legs4 = JOptionPane.showConfirmDialog(null, "Do you have four legs?", "",
+				JOptionPane.YES_OPTION);
+	
+			if(legs4 == JOptionPane.YES_OPTION)
+			{
+				
+				int species4 = JOptionPane.showConfirmDialog(null, "Do you have stripes?", "",
+					JOptionPane.YES_NO_OPTION);
+				
+					
+					if(species4 == JOptionPane.YES_OPTION)
+					{
+						JOptionPane.showMessageDialog(null, "You are a zebra.");
+					}
+					else if(species4 ==JOptionPane.NO_OPTION)
+					{
+						JOptionPane.showMessageDialog(null, "You are a pig.");
+					}
+			
+			}else{
+			
+		int legs2 = JOptionPane.showConfirmDialog(null, "Do you have two legs?", "",
+				JOptionPane.YES_OPTION);
+			
+			if(legs2 == JOptionPane.YES_OPTION)
+			{
+				
+				int species2 = JOptionPane.showConfirmDialog(null, "Are you covered in fur?", "",
+					JOptionPane.YES_NO_OPTION);
+				
+					
+					if(species2 == JOptionPane.YES_OPTION)
+					{
+						JOptionPane.showMessageDialog(null, "You are a monkey.");
+					}
+					else if(species2 ==JOptionPane.NO_OPTION)
+					{
+						JOptionPane.showMessageDialog(null, "You are a bird.");
+					}
+			
+			}
+	
+	
+	}
+}

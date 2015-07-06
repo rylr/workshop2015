@@ -1,8 +1,0 @@
-
-public class SlotMachine
-{
-	public static void main(String[] args)
-	{
-		int num1 = new Random().nextInt(3);
-	}
-}

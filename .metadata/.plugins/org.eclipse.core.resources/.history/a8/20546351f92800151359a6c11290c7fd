@@ -6,7 +6,6 @@ import java.awt.KeyEventDispatcher;
 import java.awt.KeyboardFocusManager;
 import java.awt.Label;
 import java.awt.event.KeyEvent;
-import java.util.Random;
 
 import org.teachingextensions.logo.Tortoise;
 import org.teachingextensions.logo.TurtlePanel;
@@ -16,17 +15,14 @@ public class FeedTheTortoise implements KeyEventDispatcher
 
 	private void feedTheTortoise()
 	{
-		int x = new Random().nextInt(4);
-		int y = new Random().nextInt(4);
 		// 1. use the addFood() method to add food for the tortoise
-		addFood(x*10, y*10);
+		addFood(10, 10);
 	}
 
 private void goUp()
 	{
-		Tortoise.setSpeed(10);
 		// 2. Print “going up”. Test it out by running your code and pressing the up key
-		System.out.println("Going up");
+	System.out.println("Going up");
 		// 3. Make the tortoise move up the screen
 		Tortoise.setAngle(0);
 		Tortoise.move(10);

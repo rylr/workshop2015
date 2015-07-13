@@ -24,9 +24,8 @@ public class FeedTheTortoise implements KeyEventDispatcher
 
 private void goUp()
 	{
-		Tortoise.setSpeed(10);
 		// 2. Print “going up”. Test it out by running your code and pressing the up key
-		System.out.println("Going up");
+	System.out.println("Going up");
 		// 3. Make the tortoise move up the screen
 		Tortoise.setAngle(0);
 		Tortoise.move(10);

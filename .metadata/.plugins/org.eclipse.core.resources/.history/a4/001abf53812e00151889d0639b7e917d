@@ -1,0 +1,26 @@
+import javax.swing.JOptionPane;
+
+public class SimpleNumberSort
+{
+	public static void main(String[] args)
+	{
+		String x = JOptionPane.showInputDialog("Type a random number here.");
+		String y = JOptionPane.showInputDialog("Type another random number here.");
+		String z = JOptionPane.showInputDialog("Type another random number here.");
+		int one = Integer.parseInt(x);
+		int two = Integer.parseInt(y);
+		int three = Integer.parseInt(z);
+		
+		if(two > three)
+		{
+			System.out.println(three);
+			System.out.println(two);
+		}
+		if(one > two)
+		{
+			System.out.println(one);
+		}
+		
+		
+	}
+}

@@ -1,0 +1,33 @@
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class GuiIntro
+{
+	JFrame window;
+	JFrame door;
+	JPanel panel;
+	JButton button;
+	
+	public static void main(String[] args)
+	{
+		GuiIntro g = new GuiIntro();
+
+	}
+	
+	public GuiIntro()
+	{
+		window = new JFrame();
+		window.setVisible(true);
+		window.setSize(500, 500);
+		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		panel = new JPanel();
+		
+		button = new JButton("Click here");
+		
+		panel.add(button);
+		window.add(panel);
+	}
+	
+}

@@ -1,0 +1,24 @@
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
+
+public class CheapCalc
+{
+	JFrame window;
+	JTextField one;
+	JTextField two;
+	JButton add;
+	
+	public static void main(String[] args)
+	{
+		CheapCalc a = new CheapCalc();
+	}
+	
+	public CheapCalc()
+	{
+		window = new JFrame();
+		window.setVisible(true);
+		window.setSize(100, 100);
+	}
+}

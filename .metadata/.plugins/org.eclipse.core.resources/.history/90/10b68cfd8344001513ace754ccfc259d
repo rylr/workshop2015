@@ -23,7 +23,7 @@ public class JLabelsAndFonts implements ActionListener
 	JButton sizeDown;
 	JButton emote;
 	
-	String[] texts = new String[11];
+	String[] texts = new String[10];
 	
 	int fontSize = 100;
 	int number = 1;

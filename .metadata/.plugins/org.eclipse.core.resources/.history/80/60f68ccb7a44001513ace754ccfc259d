@@ -1,0 +1,25 @@
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+
+public class JLabelsAndFonts
+{
+	JPanel panel;
+	JFrame window;
+	
+	public static void main(String[] args)
+	{
+		JLabelsAndFonts n = new JLabelsAndFonts();	
+	}
+	
+	public JLabelsAndFonts()
+	{
+		panel = new JPanel(); 
+		
+		window = new JFrame();
+		window.setSize(500, 500);
+		window.setVisible(true);
+		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		window.add(panel);
+	}
+}

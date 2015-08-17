@@ -1,0 +1,37 @@
+import java.awt.Font;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+
+public class JLabelsAndFonts
+{
+	JPanel panel;
+	JFrame window;
+	JLabel label;
+	Font font;
+	
+	public static void main(String[] args)
+	{
+		JLabelsAndFonts n = new JLabelsAndFonts();	
+	}
+	
+	public JLabelsAndFonts()
+	{
+		panel = new JPanel();
+		
+		window = new JFrame();
+		window.setVisible(true);
+		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		window.add(panel);
+		
+		label = new JLabel("Text");
+		panel.add(label);
+		
+		window.setSize(500, 500);
+		
+		font = new Font("ComicSans", Font.ITALIC, 16);
+		label.setFont(font);
+	}
+}

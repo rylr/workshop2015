@@ -1,0 +1,8 @@
+import org.jointheleague.graphical.robot.Robot;
+
+
+public class robot {
+	public static void main(String[] args) {
+		Robot tyler=new Robot();
+	}
+}

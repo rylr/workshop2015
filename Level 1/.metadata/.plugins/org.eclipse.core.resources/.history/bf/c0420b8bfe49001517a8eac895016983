@@ -1,0 +1,34 @@
+import org.jointheleague.graphical.robot.Robot;
+
+public class robotMethods
+{
+	public static void main(String[] args)
+	{
+
+		robotMethods r = new robotMethods();
+	}
+
+	public robotMethods()
+	{
+		Robot dennis = new Robot();
+		Robot olofmeister = new Robot(50,50);
+		dennis.penDown();
+		olofmeister.penDown();
+
+		square(dennis);
+		square(olofmeister);
+		
+		
+
+	}
+
+	public void square(Robot robot)
+	{
+		for (int i = 0; i <= 3; i++)
+		{
+			robot.move(175);
+			robot.turn(90);
+		}
+	}
+
+}

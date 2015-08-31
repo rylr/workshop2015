@@ -1,0 +1,87 @@
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class robotGUI
+{
+	JFrame frame;
+	JPanel panel;
+	JTextField sides;
+	JTextField sideLength;
+	JTextField penSize;
+	JTextField penColor;
+	JTextField speed;
+	JButton generate;
+	JLabel sidesLab;
+	JLabel sidesLengthLab;
+	JLabel penSizeLab;
+	JLabel penColorLab;
+	JLabel speedLab;
+
+	public static void main(String[] args)
+	{
+		robotGUI r = new robotGUI();
+
+	}
+
+	public robotGUI()
+	{
+
+		JFrame frame = new JFrame();
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		JPanel panel = new JPanel();
+		panel.setLayout(null);
+
+		JButton generate = new JButton("Generate");
+
+		JTextField sides = new JTextField("", 20);
+		sides.setBounds(75, 10, 150, 20);
+
+		JTextField sideLength = new JTextField("", 20);
+		sideLength.setBounds(75, 60, 150, 20);
+
+		JTextField penSize = new JTextField("", 20);
+		penSize.setBounds(75, 110, 150, 20);
+
+		JTextField penColor = new JTextField("", 20);
+		penColor.setBounds(75, 160, 150, 20);
+
+		JTextField speed = new JTextField("", 20);
+		speed.setBounds(75, 210, 150, 20);
+
+		JLabel sidesLab = new JLabel("Sides");
+		sidesLab.setBounds(20, 10, 75, 20);
+
+		JLabel sidesLengthLab = new JLabel("Sides Length");
+		sidesLengthLab.setBounds(20, 110, 75, 20);
+
+		JLabel penSizeLab = new JLabel("Pen Size");
+		penSizeLab.setBounds(20, 10, 75, 20);
+
+		JLabel penColorLab = new JLabel("Pen Color");
+		penColorLab.setBounds(20, 10, 75, 20);
+
+		JLabel speedLab = new JLabel("Speed");
+		speedLab.setBounds(20, 10, 75, 20);
+
+		panel.add(sides);
+		panel.add(sideLength);
+		panel.add(penSize);
+		panel.add(penColor);
+		panel.add(speed);
+		panel.add(generate);
+		panel.add(sidesLab);
+		panel.add(sidesLengthLab);
+		panel.add(penSizeLab);
+		panel.add(penColorLab);
+		panel.add(speedLab);
+
+		frame.add(panel);
+
+		frame.setSize(600, 600);
+	}
+}

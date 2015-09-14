@@ -1,0 +1,44 @@
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+
+public class PigLatinConverter
+{
+	JFrame frame;
+	JPanel panel;
+	JTextField input;
+	JTextField output;
+	JButton button;
+	public static void main(String[] args)
+	{
+		PigLatinConverter r = new PigLatinConverter();
+	}
+	
+	public PigLatinConverter()
+	{
+		//GUI
+		frame = new JFrame();
+		panel = new JPanel();
+		panel.setLayout(null);
+		input = new JTextField();
+		output = new JTextField();
+		button = new JButton("Covert");
+		
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		panel.add(input);
+		panel.add(output);
+		panel.add(button);
+		
+		frame.setSize(300, 300);
+		frame.add(panel);
+		
+		String inputout = input.getText();
+
+		
+		
+		
+	}
+}

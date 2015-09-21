@@ -1,0 +1,30 @@
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+
+public class spamalot
+{
+	JFrame frame;
+	JPanel panel;
+	JButton good;
+	JButton bad;
+	public static void main(String[] args)
+	{
+		spamalot r = new spamalot();
+	}
+	
+	public spamalot()
+	{
+		frame = new JFrame();
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		panel = new JPanel();
+		
+		good = new JButton("good");
+		
+		bad = new JButton("bad");
+		
+	}
+}

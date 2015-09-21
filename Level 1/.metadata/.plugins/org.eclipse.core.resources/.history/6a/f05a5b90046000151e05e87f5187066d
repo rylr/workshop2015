@@ -1,0 +1,40 @@
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class spamalot
+{
+	JFrame frame;
+	JPanel panel;
+	JButton good;
+	JButton bad;
+	JTextField input;
+
+	public static void main(String[] args)
+	{
+		spamalot r = new spamalot();
+	}
+
+	public spamalot()
+	{
+		frame = new JFrame();
+		frame.setVisible(true);
+		frame.setSize(300, 100);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		panel = new JPanel();
+
+		input = new JTextField(20);
+		panel.add(input);
+
+		good = new JButton("good");
+		panel.add(good);
+
+		bad = new JButton("bad");
+		panel.add(bad);
+
+		frame.add(panel);
+		frame.pack();
+	}
+}

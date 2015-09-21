@@ -1,0 +1,12 @@
+public class tylerReadFromFile
+{
+	public static void main(String[] args)
+	{
+		tylerReadFromFile r = new tylerReadFromFile();
+	}
+
+	public tylerReadFromFile()
+	{
+
+	}
+}

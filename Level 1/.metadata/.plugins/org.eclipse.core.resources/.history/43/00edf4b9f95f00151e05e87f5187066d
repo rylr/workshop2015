@@ -1,0 +1,12 @@
+public class tyler
+{
+	public static void main(String[] args)
+	{
+		tyler r = new tyler();
+	}
+
+	public tyler()
+	{
+
+	}
+}
